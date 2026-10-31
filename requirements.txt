@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+selenium
+jinja2
+python-multipart
+pydantic

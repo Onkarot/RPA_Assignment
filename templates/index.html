@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrangeHRM Automation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OrangeHRM Automation Dashboard</h1>
+        <p class="description">Welcome to the OrangeHRM Automation Dashboard. Here you can manage and monitor your automation tasks.</p>
+            
+        <form id="automationForm">
+            <h2>Admin Login</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <h2>Employee Management</h2>
+            <div class="form-group">
+                <label for="employeeName">Employee First Name:</label>
+                <input type="text" id="fname" placeholder="Enter First Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="employeeLastName">Employee Last Name:</label>
+                <input type="text" id="lname" placeholder="Enter Last Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="employeeId">Employee ID:</label>
+                <input type="text" id="employeeId" name="employeeId" required>
+            </div>
+            
+            <button type="submit" id="submitbtn">Submit</button>
+        </form>
+
+        <div id="status"></div>
+        <div id="result" style="display: none;">
+            <h2>Employee Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTableBody"></tbody>
+            </table>
+
+            <h2>Extract Employee Data</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                    </tr>
+                </thead>
+                <tbody id="extractedDataTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>     
